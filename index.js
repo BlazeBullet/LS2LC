@@ -2,27 +2,6 @@ const lr = require('line-reader');
 
 var end = "";
 
-
-
-// BLOCK:Keycheck
-//   KEYCHAIN SUCCESS OR
-//     STRINGKEY @data.SOURCE DoesNotContain "Password must be at least 6 characters long!"
-//     STRINGKEY @data.SOURCE DoesNotContain "Invalid username or password."
-// ENDBLOCK
-
-// BLOCK:Piston
-//   lang = "node"
-//   code = "console.log(\"cool\")"
-//   => VAR @uwu
-// ENDBLOCK
-
-// BLOCK:HttpRequest
-//   url = "https://lootbits.io/login.php"
-//   method = POST
-//   TYPE:STANDARD
-//   $"username=<input.USERNAME>&password=<input.PASSWORD>&action=login"
-//   "application/x-www-form-urlencoded"
-// ENDBLOCK
 lr.eachLine('./Loopbits.svb', (line, last) => {
     if(line.startsWith("REQUEST ")) {
         end += "BLOCK:HttpRequest\n";
