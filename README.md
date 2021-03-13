@@ -6,4 +6,4 @@ Discord: SirTenzin#2236
 > Supported Blocks [13/03/2021]
     
     HTTP Request - [All Methods, Content as Interpolated, Done, DM if Errors]
-    KeyChain - [All most done, missing ENDBLOCK, all content as interpolated]
+    KeyChain - [Almost done, missing ENDBLOCK, all content as interpolated]
