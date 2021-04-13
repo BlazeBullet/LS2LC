@@ -1,2 +1,6 @@
 node_modules/
-Loopbits.svb
+out/*
+*.svb
+*.exe
+*.loli
+*.anom
